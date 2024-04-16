@@ -1,8 +1,11 @@
+import MapView from "./components/MapView";
+
+
 function App() {
   return (
     <main className="w-screen h-screen">
       <header
-        className="bg-[url('../images/pattern-bg-desktop.png')] 
+        className="bg-[url('./images/pattern-bg-desktop.png')] 
       h-56 flex flex-col pt-5 items-center
       gap-4 w-screen"
       >
@@ -13,10 +16,10 @@ function App() {
           className="p-3 w-2/5 rounded-lg "
         />
       </header>
-      <div className="flex justify-center -mt-12">
+      <div className="flex justify-center -mt-12 ">
         <div
           className="flex bg-gray-100 p-7 
-        justify-center justify-around w-4/5 rounded-lg
+            justify-around w-4/5 rounded-lg
         "
         >
           <div>
@@ -36,6 +39,9 @@ function App() {
             <strong>SpaceX Starlink</strong>
           </div>
         </div>
+      </div>
+      <div className="w-screen h-screen" >
+        <MapView/>
       </div>
     </main>
   );
